@@ -3,7 +3,7 @@ import styles from './TodoItem.module.css';
 interface Props {
   name: string;
   done: boolean;
-  onDeleteButtonClick(id: number): void;
+  onDeleteButtonClick(): void;
   onDoneButtonClick(): void;
 }
 export function TodoItem({

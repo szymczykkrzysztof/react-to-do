@@ -1,8 +1,7 @@
-import { MouseEventHandler } from 'react';
 import styles from './Button.module.css';
 interface Props {
   children: string;
-  onClick: MouseEventHandler<HTMLButtonElement> | undefined;
+  onClick(): void;
 }
 export function Button({ children, onClick }: Props) {
   return (
