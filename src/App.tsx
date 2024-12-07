@@ -8,7 +8,7 @@ function App() {
   const [isFormShown, setIsFormShown] = useState(false);
   const [todos, setTodos] = useState([
     { name: 'Napisać kartkę', done: false, id: 1 },
-    { name: 'Wyrzucić śmieci', done: true, id: 2 },
+    { name: 'Deploy na Digital Ocean', done: true, id: 2 },
   ]);
   function addItem(newTodoName: string) {
     setTodos((prevTodos) => [
@@ -16,7 +16,7 @@ function App() {
       {
         name: newTodoName,
         done: false,
-        id: prevTodos.length > 0 ? (prevTodos!.at(-1)!.id+1) : 0,
+        id: prevTodos.length > 0 ? prevTodos!.at(-1)!.id + 1 : 0,
       },
     ]);
     setIsFormShown(false);
